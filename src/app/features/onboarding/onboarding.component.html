@@ -1,0 +1,31 @@
+<div
+  class="fixed top-0 right-0 bg-surface-950 w-full h-12 flex justify-center items-center"
+>
+  <p-progress-bar
+    styleClass="w-[70px]"
+    [value]="progress()"
+    showValue="false"
+  />
+</div>
+
+<p-stepper [value]="activeStep()">
+  <p-step-panels>
+    <p-step-panel [value]="0">
+      <ng-template #content>
+        <sprk-onboarding-goals (next)="nextStep()" />
+      </ng-template>
+    </p-step-panel>
+
+    <p-step-panel [value]="1">
+      <ng-template #content>
+        <sprk-onboarding-gender (next)="nextStep()" />
+      </ng-template>
+    </p-step-panel>
+
+    <p-step-panel [value]="2">
+      <ng-template #content>
+        <sprk-onboarding-preferences (next)="nextStep()" />
+      </ng-template>
+    </p-step-panel>
+  </p-step-panels>
+</p-stepper>

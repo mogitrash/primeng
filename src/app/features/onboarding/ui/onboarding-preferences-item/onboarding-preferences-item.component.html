@@ -1,0 +1,13 @@
+<div
+  [class.border-primary-500]="isActive()"
+  [class.border-surface-900]="!isActive()"
+  class="bg-surface-900 rounded-[18px] py-[17px] px-[20px] w-full border-2"
+>
+  <div class="flex gap-2 h-[34px]">
+    <img [src]="iconUrl()" />
+
+    <span class="text-xl" [class.text-muted-color]="!isActive()">{{
+      text()
+    }}</span>
+  </div>
+</div>
