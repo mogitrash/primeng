@@ -25,6 +25,16 @@ export const SparkPreset = definePreset(Aura, {
                 color: '{primary.500}',
               },
             },
+            secondary: {
+              hover: {
+                background: '{surface.900}',
+              },
+              background: '{surface.900}',
+              color: '{neutral.50}',
+              border: {
+                color: '{surface.900}',
+              },
+            },
           },
         },
       },

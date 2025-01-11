@@ -1,0 +1,46 @@
+<div class="flex flex-col w-full mt-[170px] items-center gap-[7.375rem]">
+  <div class="flex flex-col gap-4">
+    <div class="text-4xl w-[315px] font-semibold">How old are you?</div>
+    <div class="text-2xl w-[315px] font-semibold text-muted-color">
+      You must be at least 18 years old to continue
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <p-inputnumber
+      [showButtons]="true"
+      buttonLayout="vertical"
+      spinnerMode="vertical"
+      inputId="vertical"
+      [inputStyle]="{ width: '3rem' }"
+    >
+      <ng-template #incrementbuttonicon>
+        <span class="pi pi-plus"></span>
+      </ng-template>
+      <ng-template #decrementbuttonicon>
+        <span class="pi pi-minus"></span>
+      </ng-template>
+    </p-inputnumber>
+  </div>
+</div>
+
+<div class="p-5 fixed bottom-0 left-0 right-0 flex flex-col gap-3">
+  <p-button
+    [rounded]="true"
+    styleClass="w-full"
+    severity="secondary"
+    class="w-full"
+    size="large"
+    [label]="'Skip age question'"
+    (onClick)="goToNextStep()"
+  />
+
+  <p-button
+    [rounded]="true"
+    styleClass="w-full"
+    class="w-full"
+    size="large"
+    [label]="'Continue'"
+    (onClick)="goToNextStep()"
+  />
+</div>

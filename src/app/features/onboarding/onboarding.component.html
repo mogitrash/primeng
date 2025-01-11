@@ -27,5 +27,11 @@
         <sprk-onboarding-preferences (next)="nextStep()" />
       </ng-template>
     </p-step-panel>
+
+    <p-step-panel [value]="3">
+      <ng-template #content>
+        <sprk-onboarding-age (next)="nextStep()" />
+      </ng-template>
+    </p-step-panel>
   </p-step-panels>
 </p-stepper>

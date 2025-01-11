@@ -5,6 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { OnboardingGoalsComponent } from './ui/onboarding-goals/onboarding-goals.component';
 import { OnboardingGenderComponent } from './ui/onboarding-gender/onboarding-gender.component';
 import { OnboardingPreferencesComponent } from './ui/onboarding-preferences/onboarding-preferences.component';
+import { OnboardingAgeComponent } from './ui/onboarding-age/onboarding-age.component';
 
 @Component({
   selector: 'sprk-onboarding',
@@ -14,6 +15,7 @@ import { OnboardingPreferencesComponent } from './ui/onboarding-preferences/onbo
     OnboardingGoalsComponent,
     OnboardingGenderComponent,
     OnboardingPreferencesComponent,
+    OnboardingAgeComponent,
     ProgressBarModule,
   ],
   templateUrl: './onboarding.component.html',
@@ -23,7 +25,7 @@ export class OnboardingComponent {
   public progress = signal<number>(0);
   public activeStep = signal<number>(0);
 
-  private stepsAmount = 3;
+  private stepsAmount = 4;
 
   constructor() {
     effect(() => {
