@@ -49,6 +49,15 @@ export const SparkPreset = definePreset(Aura, {
         },
       },
     },
+    stepper: {
+      colorScheme: {
+        dark: {
+          root: {
+            stepperSteppanelsPadding: '0px',
+          },
+        },
+      },
+    },
   },
   primitive: {
     borderRadius: {

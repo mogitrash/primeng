@@ -40,4 +40,12 @@ export class OnboardingComponent {
       this.activeStep.set(this.activeStep() + 1);
     }
   }
+
+  public prevStep() {
+    console.log(this.activeStep() - 1);
+
+    if (this.activeStep() - 1 >= 0) {
+      this.activeStep.set(this.activeStep() - 1);
+    }
+  }
 }
