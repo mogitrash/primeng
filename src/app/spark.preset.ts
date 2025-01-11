@@ -595,7 +595,7 @@ export const SparkPreset = definePreset(Aura, {
           700: '#3f3f46',
           800: '#27272a',
           900: '#1F1F1F',
-          950: '#09090b',
+          950: '#000',
         },
         primary: {
           color: '{primary.400}',
@@ -614,7 +614,7 @@ export const SparkPreset = definePreset(Aura, {
           color: '{surface.200}',
         },
         formField: {
-          background: '{surface.950}',
+          background: '{surface.900}',
           disabledBackground: '{surface.700}',
           filledBackground: '{surface.800}',
           filledHoverBackground: '{surface.800}',
